@@ -1,9 +1,8 @@
+[ansible_node]
+ansible_node1 ansible_host=100.25.194.140
+ansible_node2 ansible_host=54.90.29.5
+ansible_node3 ansible_host=52.23.222.211
 
-[EC2servers]
-node1 ansible_host=54.237.66.245
-node2 ansible_host=54.172.79.251
-node3 ansible_host=107.23.91.184
-
-[EC2servers:vars]
-ansible_user=node3ansible_private_key_file=~/.ssh/id_ed25519
+[all:vars]
 ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_private_key_file=~/.ssh/id_ed25519
